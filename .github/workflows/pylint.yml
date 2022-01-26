@@ -20,5 +20,5 @@ jobs:
         pip install pylint 
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
-        python3 -m doctest $(git ls-files '*.py')
+        find . -iname "*.py" -exec python3 -m pylint {} \;
+        find . -iname "*.py" -exec python3 -m doctest {} \;
