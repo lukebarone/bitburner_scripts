@@ -20,6 +20,9 @@ def entry_point(target: int) -> int:
 
     >>> entry_point(61)
     1121504
+
+    >>> entry_point(79)
+    13848649
     """
     ways = []
     ways.append(1)

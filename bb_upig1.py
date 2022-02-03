@@ -21,6 +21,12 @@ def unique_paths(rows: int, columns: int) -> int:
 
     >>> unique_paths(9, 6)
     1287
+
+    >>> unique_paths(3, 9)
+    45
+
+    >>> unique_paths(8, 14)
+    77520
     """
     if (rows == 1 or columns == 1):
         return 1

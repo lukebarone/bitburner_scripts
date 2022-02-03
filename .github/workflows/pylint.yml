@@ -21,4 +21,6 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         find . -iname "*.py" -exec python3 -m pylint {} \;
+    - name: Running unittests with doctest
+      run: |
         find . -iname "*.py" -exec python3 -m doctest {} \;
